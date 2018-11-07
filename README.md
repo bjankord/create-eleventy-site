@@ -1,19 +1,19 @@
 # Create Eleventy Site
 
-Create a Eleventy site using the Gents Agency workflow.
+Create an Eleventy site using the Gents Agency workflow.
 
 ## Usage
 
 When you have `npm` >= 6 on your system, you can run
 
 ```sh
-$ npm init @gentsagency/11ty-site my-site
+$ npm init @gentsagency/eleventy-site my-site
 ```
 
 or if you have `npm` >= 5 on your system, you can run
 
 ```sh
-$ npx @gentsagency/create-11ty-site my-site
+$ npx @gentsagency/create-eleventy-site my-site
 ```
 
 This will output:
@@ -26,12 +26,12 @@ This will output:
 
 🚢 Moving some files around
 
-🔧 Tweaking your configuration
+🤖 Registering automation scripts
 
 🌱 All set! Let's get you started:
 
     cd ./my-site
-    gulp watch
+    gulp watch & npm run serve
 
 🤞 Good luck, have fun!
 ```
