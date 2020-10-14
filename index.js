@@ -30,7 +30,7 @@ const run = (cmd, options = { cwd }) => new Promise((resolve, reject) => {
 	console.log('');
 	await fs.ensureDir(cwd);
 
-	console.log('📥 Installing the static setup & 11ty');
+	console.log('📥 Installing the static setup');
 	console.log('☕️ This might take a while');
 	console.log('');
 	await run('npx @bjankord/create-static-site --yes');

@@ -23,7 +23,7 @@ This will output:
 ```
 👋 Creating a new Eleventy website in ./my-site
 
-📥 Installing the static setup & 11ty
+📥 Installing the static setup
 ☕️ This might take a while
 
 🚢 Moving some files around
