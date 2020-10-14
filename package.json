@@ -1,44 +1,28 @@
 {
-  "name": "@gentsagency/create-eleventy-site",
+  "name": "@bjankord/create-eleventy-site",
   "version": "1.0.0",
-  "description": "Bootstrap a Eleventy site",
+  "description": "Create a simple Eleventy site",
   "main": "index.js",
   "bin": "index.js",
-  "eslintConfig": {
-    "extends": "@gentsagency/eslint-config",
-    "env": {
-      "browser": false,
-      "node": true,
-      "es6": true
-    },
-    "rules": {
-      "no-console": 0
-    }
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --fix index.js; exit 0"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gentsagency/create-11ty-site.git"
+    "url": "git+https://github.com/bjankord/create-eleventy-site.git"
   },
   "keywords": [
+    "create-eleventy-site",
     "create-11ty-site"
   ],
-  "author": "Pieter Beulque <pieterbeulque@gmail.com>",
+  "author": "Brett Jankord <bjankord@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gentsagency/create-11ty-site/issues"
+    "url": "https://github.com/bjankord/create-eleventy-site/issues"
   },
-  "homepage": "https://github.com/gentsagency/create-11ty-site#readme",
+  "homepage": "https://github.com/bjankord/create-eleventy-site#readme",
   "dependencies": {
-    "fs-extra": "^7.0.0",
+    "fs-extra": "^9.0.0",
     "minimist": "^1.2.0"
-  },
-  "devDependencies": {
-    "@gentsagency/eslint-config": "^2.1.0",
-    "eslint": "^5.6.0",
-    "eslint-plugin-import": "^2.14.0"
   }
 }

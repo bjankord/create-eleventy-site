@@ -33,12 +33,12 @@ const run = (cmd, options = { cwd }) => new Promise((resolve, reject) => {
 	console.log('📥 Installing the static setup & 11ty');
 	console.log('☕️ This might take a while');
 	console.log('');
-	await run('npx @gentsagency/create-static-site --yes --scope=@gentsagency');
-	await run('npm install --save-dev 11ty/eleventy');
+	await run('npx @bjankord/create-static-site --yes');
 
 	console.log('🚢 Moving some files around');
 	console.log('');
 	await fs.copy(`${__dirname}/templates/src`, `${cwd}/src`);
+	await fs.copy(`${__dirname}.gitignore`, `${cwd}`);
 
 	console.log('🤖 Registering automation scripts');
 	console.log('');
@@ -49,8 +49,8 @@ const run = (cmd, options = { cwd }) => new Promise((resolve, reject) => {
 	}
 
 	Object.assign(pkg.scripts, {
-		serve: 'eleventy --serve --input=src --output=www --formats=md,html,njk',
-		build: 'eleventy --input=src --output=www --formats=md,html,njk & gulp; exit 0;',
+		serve: 'npx @11ty/eleventy --serve --input=src --output=dist --formats=html,njk,gif,png,jpg,webp,css,js',
+		build: 'npx @11ty/eleventy --input=src --output=dist --formats=html,njk,gif,png,jpg,webp,css,js'
 	});
 
 	await fs.outputJson(`${cwd}/package.json`, pkg, { spaces: 2 });
@@ -58,7 +58,7 @@ const run = (cmd, options = { cwd }) => new Promise((resolve, reject) => {
 	console.log('🌱 All set! Let\'s get you started:');
 	console.log('');
 	console.log(`    cd ${cwd}`);
-	console.log('    gulp watch & npm run serve');
+	console.log('    npm run serve');
 	console.log('');
 	console.log('🤞 Good luck, have fun!');
 }());
