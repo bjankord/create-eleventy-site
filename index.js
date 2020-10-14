@@ -33,8 +33,6 @@ const run = (cmd, options = { cwd }) => new Promise((resolve, reject) => {
 	console.log('📥 Installing the static setup');
 	console.log('☕️ This might take a while');
 	console.log('');
-	await run('npx @bjankord/create-static-site --yes');
-
 	console.log('🚢 Moving some files around');
 	console.log('');
 	await fs.copy(`${__dirname}/templates/src`, `${cwd}/src`);
