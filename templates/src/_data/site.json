@@ -1,5 +1,4 @@
 {
-  "name": "My Site",
-  "language": "en",
-  "gtm": "GTM-xxxxxx"
+  "name": "Eleventy Site",
+  "language": "en"
 }
