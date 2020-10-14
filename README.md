@@ -2,6 +2,8 @@
 
 Create a simple Eleventy site.
 
+Demo site: https://bjankord.github.io/eleventy-site/
+
 ## Usage
 
 When you have `npm` >= 6 on your system, you can run
