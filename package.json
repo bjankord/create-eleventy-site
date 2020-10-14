@@ -1,6 +1,6 @@
 {
   "name": "@bjankord/create-eleventy-site",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create a simple Eleventy site",
   "main": "index.js",
   "bin": "index.js",
