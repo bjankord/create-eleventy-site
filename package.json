@@ -4,6 +4,10 @@
   "description": "Create a simple Eleventy site",
   "main": "index.js",
   "bin": "index.js",
+  "dependencies": {
+    "fs-extra": "^9.0.0",
+    "minimist": "^1.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,14 +19,10 @@
     "create-eleventy-site",
     "create-11ty-site"
   ],
-  "author": "Brett Jankord <bjankord@gmail.com>",
+  "author": "Brett Jankord",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bjankord/create-eleventy-site/issues"
   },
-  "homepage": "https://github.com/bjankord/create-eleventy-site#readme",
-  "dependencies": {
-    "fs-extra": "^9.0.0",
-    "minimist": "^1.2.0"
-  }
+  "homepage": "https://github.com/bjankord/create-eleventy-site#readme"
 }
