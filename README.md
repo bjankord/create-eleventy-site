@@ -6,7 +6,7 @@ Demo site: https://bjankord.github.io/eleventy-site/
 
 ## Usage
 
-When you have `npm` >= 6 on your system, you can run
+If you have `npm` >= 6 on your system, you can run
 
 ```sh
 $ npm init @bjankord/eleventy-site my-site
@@ -18,27 +18,7 @@ or if you have `npm` >= 5 on your system, you can run
 $ npx @bjankord/create-eleventy-site my-site
 ```
 
-This will output:
-
-```
-👋 Creating a new Eleventy website in ./my-site
-
-📥 Installing the static setup
-☕️ This might take a while
-
-🚢 Moving some files around
-
-🤖 Registering automation scripts
-
-🌱 All set! Let's get you started:
-
-    cd ./my-site
-    npm run serve
-
-🤞 Good luck, have fun!
-```
-
-And you're good to go.
+And you're good to go with a simple Eleventy site.
 
 ## Credits
 This is an updated fork of https://github.com/gentsagency/create-eleventy-site from [
