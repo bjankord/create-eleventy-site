@@ -21,10 +21,7 @@ const cwd = (() => {
 	console.log('');
 	await fs.ensureDir(cwd);
 
-	console.log('📥 Installing the static setup');
-	console.log('☕️ This might take a while');
-	console.log('');
-	console.log('🚢 Moving some files around');
+	console.log('🤖 Copying files over');
 	console.log('');
 
 	await fs.copy(`${__dirname}/templates/src`, `${cwd}/src`);
@@ -37,5 +34,5 @@ const cwd = (() => {
 	console.log(`    cd ${cwd}`);
 	console.log('    npm run serve');
 	console.log('');
-	console.log('🤞 Good luck, have fun!');
+	console.log('👍 Good luck, have fun!');
 }());
