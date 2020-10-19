@@ -36,7 +36,7 @@ const run = (cmd, options = { cwd }) => new Promise((resolve, reject) => {
 	console.log('🚢 Moving some files around');
 	console.log('');
 	await fs.copy(`${__dirname}/templates/src`, `${cwd}/src`);
-	await fs.copy(`${__dirname}/_gitignore`, `${cwd}/.gitignore`);
+	await fs.copy(`${__dirname}/.gitignoreFile`, `${cwd}/.gitignore`);
 
 	console.log('🤖 Registering automation scripts');
 	console.log('');
